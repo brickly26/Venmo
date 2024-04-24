@@ -12,6 +12,8 @@
 		B2267A112BD97D5B00F3C531 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2267A102BD97D5B00F3C531 /* RealmManager.swift */; };
 		B2267A152BD97EE100F3C531 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2267A142BD97EE100F3C531 /* Expense.swift */; };
 		B2267A182BD9887200F3C531 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2267A172BD9887200F3C531 /* Color.swift */; };
+		B2267A1A2BD9937500F3C531 /* KeyboardUtills.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2267A192BD9937500F3C531 /* KeyboardUtills.swift */; };
+		B2267A1C2BD9942C00F3C531 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2267A1B2BD9942C00F3C531 /* Add.swift */; };
 		B2BC1C132BD4378D00E49291 /* VenmoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC1C122BD4378D00E49291 /* VenmoApp.swift */; };
 		B2BC1C152BD4378D00E49291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC1C142BD4378D00E49291 /* ContentView.swift */; };
 		B2BC1C172BD4379000E49291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BC1C162BD4379000E49291 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		B2267A102BD97D5B00F3C531 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = SOURCE_ROOT; };
 		B2267A142BD97EE100F3C531 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		B2267A172BD9887200F3C531 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B2267A192BD9937500F3C531 /* KeyboardUtills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtills.swift; sourceTree = "<group>"; };
+		B2267A1B2BD9942C00F3C531 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 		B2BC1C0F2BD4378D00E49291 /* Venmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BC1C122BD4378D00E49291 /* VenmoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenmoApp.swift; sourceTree = "<group>"; };
 		B2BC1C142BD4378D00E49291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				B2267A172BD9887200F3C531 /* Color.swift */,
+				B2267A192BD9937500F3C531 /* KeyboardUtills.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 				B2BC1C242BD438E600E49291 /* Reports.swift */,
 				B2BC1C272BD7135A00E49291 /* Settings.swift */,
 				B2BC1C292BD7179B00E49291 /* Categories.swift */,
+				B2267A1B2BD9942C00F3C531 /* Add.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				B2BC1C282BD7135A00E49291 /* Settings.swift in Sources */,
 				B2267A152BD97EE100F3C531 /* Expense.swift in Sources */,
 				B2BC1C2A2BD7179B00E49291 /* Categories.swift in Sources */,
+				B2267A1C2BD9942C00F3C531 /* Add.swift in Sources */,
+				B2267A1A2BD9937500F3C531 /* KeyboardUtills.swift in Sources */,
 				B2BC1C2D2BD8204300E49291 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

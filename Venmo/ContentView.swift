@@ -22,7 +22,8 @@ struct ContentView: View {
                     Label("Reports", systemImage: "chart.bar.fill")
                 }
             
-            Text("")
+            Add()
+                .environmentObject(realmManager)
                 .tabItem {
                     Label("Add", systemImage:"plus")
                 }

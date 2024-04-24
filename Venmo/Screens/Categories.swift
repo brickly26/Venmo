@@ -99,7 +99,7 @@ struct Categories: View {
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
                 Button {
-                    print("keyboard")
+                    hideKeyboard()
                 } label: {
                     Label("Dismiss", systemImage: "keyboard.chevron.compact.down")
                 }
