@@ -22,7 +22,14 @@ class RealmManager: ObservableObject {
     
     func openRealm() {
         do {
-            let config = Realm.Configuration(schemaVersion: 1)
+            let config = Realm.Configuration(
+                schemaVersion: 2,
+                migrationBlock: { migration, oldSchemaVersion in
+                    if oldSchemaVersion < 1 {
+                       
+                    }
+                }
+            )
             
             Realm.Configuration.defaultConfiguration = config
                 
@@ -40,6 +47,21 @@ class RealmManager: ObservableObject {
             
             allExpenses.forEach { expense in
                 expenses.append(expense)
+            }
+        }
+    }
+    
+    func submitExpense(_ expense: Expense) {
+        if let localRealm = localRealm {
+            do {
+                try localRealm.write {
+                    localRealm.add(expense)
+                    loadExpenses()
+                    
+                    print("Expense submitted to Realm!", expense)
+                }
+            } catch {
+                print("Error submitting expense to Realm: \(error)")
             }
         }
     }

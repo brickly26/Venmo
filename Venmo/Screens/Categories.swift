@@ -16,6 +16,7 @@ struct Categories: View {
     @State private var newCategoryColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     
     func handleSubmit() {
+        print("In submit")
         if newCategoryName.count > 0 {
             realmManager.submitCategory(Category(name: newCategoryName, color: newCategoryColor))
             newCategoryName = ""

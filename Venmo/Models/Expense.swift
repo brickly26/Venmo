@@ -8,28 +8,22 @@
 import RealmSwift
 import SwiftUI
 
-
 class Expense: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var amount: Double
     @Persisted var category: Category?
     @Persisted var date: Date
     @Persisted var note: String?
-//    @Persisted var recurrence: Recurrance? = Recurrence.none
+    @Persisted var recurrence: Recurrence? = Recurrence.none
     
-    convenience init(amount: Double, category: Category, date: Date, note: String? = nil) {
+    convenience init(amount: Double, category: Category, date: Date, note: String? = nil, recurrence: Recurrence? = nil) {
         self.init()
         self.amount = amount
         self.category = category
         self.date = date
         self.note = note
+        self.recurrence = recurrence
     }
 }
 
-enum Recurrence: String, PersistableEnum, CaseIterable {
-    case none = "None"
-    case daily = "Daily"
-    case weekly = "Weekly"
-    case monthly = "Monthly"
-    case yearly = "Yearly"
-}
+
